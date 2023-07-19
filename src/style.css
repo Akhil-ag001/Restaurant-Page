@@ -1,0 +1,121 @@
+@font-face {
+    font-family: title-font;
+    src: url("./../src/Assets/Fonts/YsabeauInfant.ttf");
+}
+
+:root{
+    font-size: 16px;
+}
+
+*{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    height: 250px;
+    border: 1px solid black;
+}
+
+body::before{
+    content: "";
+    background-image: url("./../src/Assets/Background/BGI.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.18;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: antiquewhite;
+}
+
+#content{
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    gap: 60px;
+    padding-right: 2rem;
+}
+
+.button{
+    font-size: 2.5rem;
+}
+
+.name{
+    font-family: title-font;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 8rem;
+}
+
+.content{
+    font-size: 2rem;
+}
+
+.img-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.dish-item{
+    justify-self: center;
+    align-self: center;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dish img{
+    align-self: center;
+}
+
+.dish-desc{
+    font-size: 2.5rem;
+}
+
+.contact{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timings>div{
+    font-size: 2rem;
+}
+
+.details>div{
+    font-size: 2rem;
+}
